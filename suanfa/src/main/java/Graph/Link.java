@@ -93,6 +93,8 @@ class Node<T>{
     int d;
     int f;
     Node prrvious;
+    int def;
+    int low;
 
     public Node(T value, Node next) {
         this.value = value;
