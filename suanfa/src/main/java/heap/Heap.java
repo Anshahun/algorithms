@@ -6,15 +6,24 @@ public class Heap {
 
     static int heap_size;
 
+    //优先级队列
     public static void main(String[] args) {
         Random ran = new Random();
         int[] arr = new int[11];
         for (int i = 1; i <11 ; i++) {
             arr[i] = ran.nextInt(100);
         }
+        for (int i: arr) {
+            System.out.print(i+",");
+        }
+        System.out.println();
         heap_size = arr.length;
         Heap h = new Heap();
         h.build_beap(arr);
+        for (int i: arr) {
+            System.out.print(i+",");
+        }
+        System.out.println();
         h.heap_sort(arr);
         for (int i: arr) {
             System.out.print(i+",");

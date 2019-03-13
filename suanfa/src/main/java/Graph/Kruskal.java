@@ -115,6 +115,9 @@ public class Kruskal {
 
 class Node2{
     String value;
+    //估计的最短路径长度
+    int length;
+    Node2 prev;
 
     public Node2(String value) {
         this.value = value;
